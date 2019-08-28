@@ -24,6 +24,8 @@ export class ListenComponent implements OnInit {
       this.liste.push(i);
 
     }
+
   }
+  
 
 }
