@@ -11,6 +11,7 @@ export class ListenComponent implements OnInit {
 
   ende: number = 10;
   
+  
   ngOnInit() {
   }
 
