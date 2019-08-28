@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listen.component.css']
 })
 export class ListenComponent implements OnInit {
-
+  ende = 10;
   constructor() { }
 
   ngOnInit() {
