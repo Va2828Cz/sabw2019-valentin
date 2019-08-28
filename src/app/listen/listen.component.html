@@ -1,20 +1,27 @@
-
-<div class="container"> 
-<div class="row" >
-<div class= "col-12" >
-<br/>
-	<form>
-		Zähle von 0 bis:
-		<input name= "zahl" type= "number" class="form-control" id="exampleFormControlInput1" [(ngModel)]="ende" />
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<br/>
+				<form>
+					Zähle von 0 bis:
+					<input name= "zahl" type= "number" class="form-control" id="exampleFormControlInput1" [(ngModel)]="ende" />
     <br/>
     <button type="button" class="btn btn-outline-dark" (click)="zaehle()" id="i_zaehlen" >
       Zählen
 
     </button>
-  </form>
+    </form>
 
-  {{liste}}
+    <ul *ngFor="let zahl of liste" >
+      <li>{{zahl}}</li>
+    </ul>
 
-</div>
-</div>
+
+		  </div>
+	  </div>
+    <!--<div class = "row">
+      <div class = "col-10">
+        {{liste}}
+      </div>
+    </div>-->
 </div>
